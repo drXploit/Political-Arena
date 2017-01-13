@@ -1,0 +1,16 @@
+/// Attack animation
+
+if !attacking
+{
+     attacking = true;
+//     sprite_index = spr_avatar_swing;
+     sprite_index = trump_swing;
+     image_index = 0;
+     image_speed = 0.25
+//    with instance_create(x, y, obj_sword_hit)
+    with instance_create(x,y-110,obj_hair)
+    {
+         image_xscale = obj_player.image_xscale
+    }
+}
+
